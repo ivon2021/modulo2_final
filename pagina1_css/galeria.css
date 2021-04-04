@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family:'Raleway', sans-serif;
+}
+
+h1{
+    font-weight: 400px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+}
+
+.linea{
+    background: #050505;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+ .galeria{
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+     width: 95%;
+     margin: auto;
+     grid-gap: 10px;
+     padding: 40px 0;
+     overflow: hidden;
+    }
+
+    .galeria > a {
+        display:block;
+       
+        overflow: hidden;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+
+       }
+       
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.galeria a:hover img{
+ filter: blur(2px);
+ transform: rotate(10deg) scale(1.3);
+}
+
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.light-box img{ /*tamaño de la iamgen cuando das next*/
+    width: 75vw;
+    max-height: 70vh;
+}
+
+.light-box:target{/*si has dado click a la imagen*/
+transform: scale(1);
+}
+
+.close{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: #851919;
+    color: #fff;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.next{
+    display: block;
+    background: #851919;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/*modal en css y html*/
+.modal-contenido{
+    background-color:rgb(227, 231, 231);
+    width:400px;
+    height: 500px;
+    padding: 10px 20px;
+    margin:10% auto;
+    position: relative;
+    border-radius: 10px; 
+  }
+  .modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+   
+  }
+  #miModal:target{
+    opacity:1;
+    pointer-events:auto;
+    display: flex;
+    justify-content: center;
+  }
+
+
+@media screen and (max-width:400px){
+    .galeria{
+        grid-template-rows: repeat(auto-fit,minmax(200px, 1fr));
+    }
+
+    .close{
+        top: 20px;
+        right: 20px;
+    }
+}

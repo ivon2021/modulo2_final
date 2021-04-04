@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA-CSS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="estilo.css">
+  
+   
+</head>
+<body>
+    <div class="principalimg ">
+        <div class="container">
+            <div class="page-header">
+                <h1>Joyas Bellissima</h1>
+                <p >Nunca dejes de brillar</p>
+            </div>
+        </div>
+    </div>
+
+
+   <nav>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#mi">Acerca de mí</a></li>
+                <li><a href="#miModal">Contacto</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+            
+        </div>
+          <!---inicio del modal-->
+          <div id="miModal" class="modal" class="formulario" tabindex="-1">
+            <div class="modal-contenido">
+              <a href="#">X</a>
+                   <!-- formulario de contacto en html y css -->  
+                                
+                            <h2>Formulario de contacto</h2>
+                                <form action="" method="">                  
+                                        <label for="nombre" >Nombre
+                                        </label>
+                                        <input type="text" name="introducir_nombre" id="nombre"  placeholder="Escribe tu nombre">
+                                        <label for="email">Email
+                                        </label>
+                                        <input type="email"  id="email" placeholder="Escribe tu Email">
+                                        <label for="telefone">Teléfono
+                                        </label>
+                                        <input type="tel"  id="telefono" placeholder="Escribe tu teléfono">
+                                        <label for="mensaje" >Mensaje
+                                        </label>                     
+                                        <textarea name="#" id="mensaje"placeholder="Deja aquí tu comentario..."></textarea>                     
+                                        <button type="submit" name="#" id="enviar"><p>Enviar</p></button>            
+                                </form>
+                            
+                      
+                    <!--din del formulario-->
+            </div>  
+          </div>
+    <!---fin del modal-->   
+     </nav>
+     
+                <section class="contenido">
+                    <article class="izquierda">
+                            <div id="mi">
+                                <h3>Acerca de mí</h3>
+                                <p>Fotográfia</p>
+                                <img src="imagen/logo.png"  alt="">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis nam inventore quod placeat delectus consequatur sint magni, error non esse quisquam nisi quis pariatur fuga deserunt officiis eaque aspernatur nemo!</p>
+                            </div>
+                            <br>
+                            <div>
+                                <h3>Nuestros Productos</h3>
+                                <p>Ejemplo de texto en este lugar...</p>
+                                <div>
+                                    <a href="galeria.html"><img src ="imagen/link2.png"  alt="Aros"></a>
+                                    <a href="galeria.html"><img src="imagen/link1.png"   alt="Collar"></a>
+                                    <a href="galeria.html"><img src="imagen/link3.png"   alt="Anillos"></a>
+                                    <a href="galeria.html"><img src="imagen/link4.png"   alt="Pulseras"></a>
+                                </div>
+                            </div>
+                    </article>
+
+                    <aside class="derecha">
+                            <div>
+                                <h3>Titulo de la cabecera</h3>
+                                <p>Descripcion, 27 de julio de 2020</p>
+                                <img src="imagen/mujer2.jpg"   alt="">
+                                <p>Algún texto...</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam possimus temporibus numquam voluptatum, inventore obcaecati aliquid alias debitis esse dolorem, facere repellat eligendi nobis nisi illum delectus sequi eius ut!</p>
+                            </div>
+                            <br>
+                            <div >
+                            <h3>Titulo de cabecera</h3>
+                            <p>Descripcion, 27 de julio de 2020</p>
+                            <img src="imagen/mujer2.jpg"  alt="">
+                                <p>Algún texto...</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam possimus temporibus numquam voluptatum, inventore obcaecati aliquid alias debitis esse dolorem, facere repellat eligendi nobis nisi illum delectus sequi eius ut!</p>
+                            </div>
+                    </aside>
+                   
+      
+                </section>
+  
+            <footer class="pie">
+                <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+                <p>© Bellissima-2021. Todos los derechos reservados.</p>    
+            </footer>
+       
+</body>
+</html>

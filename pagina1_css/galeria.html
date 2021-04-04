@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA-CSS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="galeria.css">
+   
+</head>
+<body>
+    <div class="principalimg ">
+        <div class="container">
+            <div class="page-header">
+                <h1>Joyas Bellissima</h1>
+                <p >Nunca dejes de brillar</p>
+            </div>
+        </div>
+    </div>
+
+   <nav>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Acerca de mí</a></li>
+                <li><a href="#miModal">Contacto</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>   
+        </div>
+
+        <!---inicio del modal-->
+        <div id="miModal" class="modal" class="formulario" tabindex="-1">
+            <div class="modal-contenido">
+              <a href="#">X</a>
+                   <!-- formulario de contacto en html y css -->  
+                                
+                            <h2>Formulario de contacto</h2>
+                                <form action="" method="">                  
+                                        <label for="nombre" >Nombre
+                                        </label>
+                                        <input type="text" name="introducir_nombre" id="nombre"  placeholder="Escribe tu nombre">
+                                        <label for="email">Email
+                                        </label>
+                                        <input type="email"  id="email" placeholder="Escribe tu Email">
+                                        <label for="telefone">Teléfono
+                                        </label>
+                                        <input type="tel"  id="telefono" placeholder="Escribe tu teléfono">
+                                        <label for="mensaje" >Mensaje
+                                        </label>                     
+                                        <textarea name="#" id="mensaje"placeholder="Deja aquí tu comentario..."></textarea>                     
+                                        <button type="submit" name="#" id="enviar"><p>Enviar</p></button>            
+                                </form>
+                            
+                      
+                    <!--din del formulario-->
+            </div>  
+          </div>
+    <!---fin del modal-->   
+     </nav>
+     <h1>GALERIA DE IMAGENES</h1>
+     <span class="linea"></span>
+     
+         <section class="galeria">
+     
+             <a href="#image1" src="">
+             <img src="imagen/collar1.png" alt=""></a>
+         
+             <a href="#image2" src="">
+             <img src="imagen/pulsera1.png" alt=""></a>
+         
+             <a href="#image3" src="">
+             <img src="imagen/aros1.png" alt=""></a>
+         
+             <a href="#image4" src="">
+             <img src="imagen/anillos.png" alt=""></a>
+         
+             <a href="#image5" src="">
+             <img src="imagen/aros2.png" alt=""></a>
+         
+             <a href="#image6" src="">
+             <img src="imagen/pulsera.jpg" alt=""></a>
+             
+             <a href="#image7" src="">
+             <img src="imagen/aros.png" alt=""></a>
+
+            <a href="#image8" src="">
+            <img src="imagen/collar.png" alt=""></a>
+     </section>
+ 
+     <article  class="light-box" id="image1">
+         <a href="#image6" class="next"><i class="fas fa-arrow-left"></i></a>
+         <img src="imagen/collar1.png" alt="">
+         <a href="#image2" class="next"><i class="fas fa-arrow-right"></i></a>
+         <a href="#" class="close">X</a>
+     </article>
+ 
+     <article  class="light-box" id="image2">
+         <a href="#image1" class="next"><i class="fas fa-arrow-left"></i></a>
+         <img src="imagen/pulsera1.png" alt="">
+         <a href="#image3" class="next"><i class="fas fa-arrow-right"></i></a>
+         <a href="#" class="close">X</a>
+     </article>
+ 
+     <article  class="light-box" id="image3">
+         <a href="#image2" class="next"><i class="fas fa-arrow-left"></i></a>
+        <img src="imagen/aros1.png" alt="">
+         <a href="#image4" class="next"><i class="fas fa-arrow-right"></i></a>
+         <a href="#" class="close">X</a>
+     </article>
+ 
+     <article  class="light-box" id="image4">
+         <a href="#image3" class="next"><i class="fas fa-arrow-left"></i></a>
+          <img src="imagen/anillos.png" alt="">
+         <a href="#image5" class="next"><i class="fas fa-arrow-right"></i></a>
+         <a href="#" class="close">X</a>
+     </article>
+ 
+     <article  class="light-box" id="image5">
+         <a href="#image4" class="next"><i class="fas fa-arrow-left"></i></a>
+        <img src="imagen/aros2.png" alt="">
+         <a href="#image6" class="next"><i class="fas fa-arrow-right"></i></a>
+         <a href="#" class="close">X</a>
+     </article>
+     <article  class="light-box" id="image6">
+         <a href="#image5" class="next"><i class="fas fa-arrow-left"></i></a>
+         <img src="imagen/pulsera.jpg" alt="">
+         <a href="#image7" class="next"><i class="fas fa-arrow-right"></i></a>
+         <a href="#" class="close">X</a>
+     </article>
+     <article  class="light-box" id="image7">
+        <a href="#image6" class="next"><i class="fas fa-arrow-left"></i></a>
+        <img src="imagen/aros.png" alt="">
+        <a href="#image8" class="next"><i class="fas fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+    <article  class="light-box" id="image8">
+        <a href="#image7" class="next"><i class="fas fa-arrow-left"></i></a>
+        <img src="imagen/collar.png" alt="">
+        <a href="#image1" class="next"><i class="fas fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+
+
+     
+  
+            <footer class="pie">
+                <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+                <p>     © Bellissima-2021. Todos los derechos reservados.</p>    
+            </footer>
+       
+</body>
+</html>
